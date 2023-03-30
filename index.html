@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD EXAMEN MOYA
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body >
+    
+        
+            <div style="align-items: center;">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" >
+                    <div>
+                        <label >NOMBRE COMPLETO</label class="etiquetas"><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label >CODIGO POSTAL</label>
+                        <input type="text" name="empCode" id="empCode">
+                    </div>
+                    <div>
+                        <label >SUELDO</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label >CiUDAD</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Listo">
+                    </div>
+                </form>
+            </div>
+            <div>
+                <table class="list" id="employeeList">
+                    <thead >
+                        <tr >
+                            <th>NOMBRE COMPLETO</th>
+                            <th>CODIGO POSTAL</th>
+                            <th>SUELDO</th>
+                            <th>CIUDAD</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody style="border-color: rgb(223, 211, 211);">
+
+                    </tbody>
+                </table>
+         </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
